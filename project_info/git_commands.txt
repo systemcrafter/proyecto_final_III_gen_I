@@ -5,3 +5,9 @@ git status
 git add .
 git commit -m "Actualizacion 2024-08-03 11:53am"
 git push
+
+
+
+git checkout
+git branch xxxxxxxx
+git checkoout xxxxxxxx
