@@ -4,43 +4,33 @@
     box-sizing: border-box;
 }
 
-
 html, body {
     width: 100%;
     height: 100%;
-    /*Ajusta tamaño para que no hayan barras de desplazamiento*/
-    overflow: hidden;
+    overflow: auto;
+    background-color: #191818;
 }
 
 .image-main {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-color: #555357;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
 }
 
 .image-main img {
-    width: 100%;
-    height: 100%;
-
+    width: 80%;
+    max-width: 1000px;
+    height: auto;
 }
 
 .container-top {
     z-index: 1;
-    padding: 25px;
+    padding: 15px;   
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
 }
-
-.menu-left {
-    color: white;
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 18px;
-}
-
 
 .sub-menu-right{
     color: white;
@@ -53,34 +43,42 @@ html, body {
     display: none;
     flex-direction: column;
     justify-content: space-around;
-    width: 35px;
-    height: 30px;
+    width: 30px;
+    height: 20px;
     cursor: pointer;
 }
 
 .hamburger-icon span {
     width: 100%;
-    height: 5px;
+    height: 2px;
     background-color: white;
     border-radius: 3px;
 }
 
-.links-menu-left, .links-menu-right {
+.links-menu-right { 
     text-decoration: none;
     color: white;
-    text-align: center; 
+    text-align: center;
     margin-right: 15px;
 }
 
 .container-main {
-    display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    display: flex;
     flex-direction: column;
-    z-index: 1;
-    height: 100vh;
-    position: relative;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho de la página */
+    min-height: 600px; /* Establece una altura mínima para el contenedor */
+    background-color: #333; /* Puedes cambiar el color de fondo según tu diseño */
+    padding: 5px; /* Añade un poco de padding si es necesario */
+    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total del contenedor */
+    background-image: url('../images/image_main.png'); /* Cambia esta ruta por la ubicación de tu imagen */
+    background-size: cover; 
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+
 }
+
 
 .title {
     font-size: 10vw; /* Usa unidades relativas a la anchura de la ventana gráfica */
@@ -97,15 +95,12 @@ html, body {
     font-family: 'Segoe UI', sans-serif;
     background-color: #ff0000;
     padding: 13px;
-    border-radius: 2px; 
+    border-radius: 2px;
+    margin: 0 240px; /* Añadir márgenes laterales */
 }
 
 
 @media (max-width: 1025px) {
-
-    .image-main img {
-        height: auto; /* Ajusta la altura automáticamente */
-    }
 
     .title {
         font-size: 8vw; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
@@ -128,20 +123,86 @@ html, body {
         display: flex;
         width: auto;
         height: auto;
-        align-items: flex-start; 
+        align-items: flex-start;
         flex-direction: column;
         justify-content: center;
         background-color: #ff0000;
-        font-size: 20px;
+        font-size: 18px;
         padding: 10px 0px;
-        border-radius: 2px; 
+        border-radius: 2px;
     }
 
-    
+   
     .hamburger-icon {
-        display: flex; 
+        display: flex;
         position: absolute;
-        right: 20px; 
-        top: 20px;
+        right: 20px;
+        top: 5px;
     }
+}
+
+.main-accordion-container{
+    width: 100%;
+}
+
+.accordion-item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.accordion-item:hover{
+   
+    transform: scale(1.05);
+    /* font-weight: bolder; */
+}
+
+.accordion-title{
+    width: 100%;
+    height: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 10px 0;
+}
+
+.tab-active .accordion-title {
+    font-size: 20px;
+}
+
+.accordion-desc{
+    width: calc(100% - 400px);
+    height: auto;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+   
+}
+
+.accordion-title .tab-active{
+    font-size: 30px;
+    pointer-events: visible;
+}
+
+.tab-active .accordion-desc{
+    color: white;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #ff0000;
+    border-radius: 2px;
 }

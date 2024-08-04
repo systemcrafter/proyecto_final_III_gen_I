@@ -6,7 +6,7 @@ console.log("hamburger-icon loaded");
         },
         eventhandlers: function () {
             document.querySelector('.hamburger-icon').addEventListener('click', function () {
-                document.querySelector('.sub-menu-right').classList.toggle('menu-open');
+                document.querySelector('.menu-right').classList.toggle('menu-open');
             })
         }
     }
