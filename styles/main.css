@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
     overflow: auto;
@@ -27,12 +28,12 @@ html, body {
 
 .container-top {
     z-index: 1;
-    padding: 15px;   
+    padding: 15px;
     display: flex;
     justify-content: right;
 }
 
-.sub-menu-right{
+.sub-menu-right {
     color: white;
     font-family: 'Segoe UI', sans-serif;
     font-size: 18px;
@@ -55,7 +56,7 @@ html, body {
     border-radius: 3px;
 }
 
-.links-menu-right { 
+.links-menu-right {
     text-decoration: none;
     color: white;
     text-align: center;
@@ -67,15 +68,23 @@ html, body {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    width: 100%; /* Asegura que el contenedor ocupe todo el ancho de la página */
-    min-height: 600px; /* Establece una altura mínima para el contenedor */
-    background-color: #333; /* Puedes cambiar el color de fondo según tu diseño */
-    padding: 5px; /* Añade un poco de padding si es necesario */
-    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total del contenedor */
-    background-image: url('../images/image_main.png'); /* Cambia esta ruta por la ubicación de tu imagen */
-    background-size: cover; 
-    background-position: center; /* Centra la imagen de fondo */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    width: 100%;
+    /* Asegura que el contenedor ocupe todo el ancho de la página */
+    min-height: 600px;
+    /* Establece una altura mínima para el contenedor */
+    background-color: #333;
+    /* Puedes cambiar el color de fondo según tu diseño */
+    padding: 5px;
+    /* Añade un poco de padding si es necesario */
+    box-sizing: border-box;
+    /* Incluye el padding y el borde en el tamaño total del contenedor */
+    background-image: url('../images/image_main.png');
+    /* Cambia esta ruta por la ubicación de tu imagen */
+    background-size: cover;
+    background-position: center;
+    /* Centra la imagen de fondo */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
 
 }
 
@@ -95,29 +104,15 @@ html, body {
     background-color: #ff0000;
     padding: 13px;
     border-radius: 2px;
-    margin: 0 240px; /* Añadir márgenes laterales */
+    margin: 0 240px;
+    /* Añadir márgenes laterales */
 }
 
-
-/* .main-accordion-container{
+.main-accordion-container {
     width: 100%;
-} */
-
-/* .accordion-item{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-} */
-
-.accordion-item:hover{
-   
-    transform: scale(1.05);
 }
 
-/* .accordion-title{
+.accordion-title {
     width: 100%;
     height: auto;
     color: white;
@@ -129,15 +124,12 @@ html, body {
     font-weight: 500;
     font-family: 'Segoe UI', sans-serif;
     padding: 10px 0;
-} */
-
-.tab-active .accordion-title {
-    font-size: 20px;
 }
 
-.accordion-desc{
+.accordion-desc {
     width: calc(100% - 400px);
-    margin: 0 20px; /* Añade márgenes laterales de 20px */
+    margin: 0 20px;
+    /* Añade márgenes laterales de 20px */
     height: auto;
     font-family: 'Segoe UI', sans-serif;
     font-size: 14px;
@@ -146,15 +138,33 @@ html, body {
     align-items: center;
     justify-content: center;
     display: none;
-   
+
 }
 
-.accordion-title .tab-active{
+.accordion-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.accordion-item:hover {
+
+    transform: scale(1.05);
+}
+
+.tab-active .accordion-title {
+    font-size: 20px;
+}
+
+.accordion-title .tab-active {
     font-size: 30px;
     pointer-events: visible;
 }
 
-.tab-active .accordion-desc{
+.tab-active .accordion-desc {
     color: white;
     height: auto;
     display: flex;
@@ -168,87 +178,20 @@ html, body {
 
 }
 
-/* .card-item{
-    width: 90%;
-    margin: 30px 0;
-} */
-
-.card-title{
-    font-size: 16px;
-    margin-bottom: 20px;
+.accordion-title .tab-active {
+    font-size: 30px;
+    pointer-events: visible;
 }
 
-.card-desc{
-    font-size: 13px;
-    height: 220px;
+.tab-active .accordion-desc {
+    color: white;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
 }
-
-.card-cta{
-    width: 300px;
-    font-size: 12px;
-    height: auto;
-}
-
-
-.main-accordion-container{
-width: 100%;
-}
-
-
-.accordion-item{
-width: 100%;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-height: auto;
-}
-
-.accordion-item:hover{
-
-transform: scale(1.05);
-/* border: 3px solid black; */
-}
-
-.accordion-title{
-width: 100%;
-height: auto;
-color: white;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-font-size: 20px;
-font-weight: 500;
-font-family: 'Segoe UI', sans-serif;
-padding: 10px 0;
-}
-
-.tab-active .accordion-title {
-font-size: 20px;
-}
-
-.accordion-title .tab-active{
-font-size: 30px;
-pointer-events: visible;
-}
-
-.tab-active .accordion-desc{
-color: white;
-height: auto;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-padding: 10px 0;
-}
-
-/* .card-list {
-background-color: white;
-display: flex;
-justify-content: space-around;
-flex-wrap: wrap;
-} */
 
 .card-list {
     background-color: white;
@@ -260,66 +203,78 @@ flex-wrap: wrap;
 }
 
 .card-item {
-flex: 1 1 calc(25% - 20px); /* Cada tarjeta ocupa el 25% del ancho menos el espacio de los márgenes*/
-margin: 10px; /* Ajusta el margen según tus necesidades */
-box-sizing: border-box;
-background-color: #eee; /* Ajusta el color de fondo según tus necesidades */
-padding: 20px;/* Añade padding para un mejor espaciado*/
-width: 90%;
-}
-
-.card-item:hover {
-transform: scale(1.01) translateY(-20px)
+    flex: 1 1 calc(25% - 20px);
+    /* Cada tarjeta ocupa el 25% del ancho menos el espacio de los márgenes*/
+    margin: 10px;
+    /* Ajusta el margen según tus necesidades */
+    box-sizing: border-box;
+    background-color: #eee;
+    /* Ajusta el color de fondo según tus necesidades */
+    padding: 20px;
+    /* Añade padding para un mejor espaciado*/
+    width: 90%;
 }
 
 .card-item img {
-width: 100%;
-height: 200px; /* Ajusta la altura según tus necesidades */
-object-fit: cover;
-object-position: center;
+    width: 100%;
+    height: 200px;
+    /* Ajusta la altura según tus necesidades */
+    object-fit: cover;
+    object-position: center;
 }
 
 .card-info {
-width: 100%;
-font-family: 'Segoe UI', sans-serif;
-font-size: 12pt;
-display: flex;
-flex-direction: column;
-padding: 15px;
+    /* width: 100%; */
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 12pt;
+    /* flex-direction: column; */
+    padding: 15px;
 }
 
 .card-title {
-color: #ff0000;
-width: 100%;
-height: auto;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-text-align: center;
-font-size: 14pt;
-font-weight: bolder;
-padding-bottom: 10px;
+    color: #ff0000;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14pt;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-.card-desc{
-width: 100%; /* Ajusta el ancho al 100% */
-display: block; /* Asegura que el párrafo se comporte como un bloque */
-text-align: justify; /* Justifica el texto */
-padding: 10px 0; /* Añade padding si es necesario */
-overflow: hidden; /* Oculta cualquier desbordamiento */
-box-sizing: border-box; /* Incluye padding y bordes en el ancho total */
+.card-desc {
+    width: 100%;
+    /* Ajusta el ancho al 100% */
+    display: block;
+    /* Asegura que el párrafo se comporte como un bloque */
+    text-align: justify;
+    padding: 10px 0;
+    /* Añade padding si es necesario */
+    overflow: hidden;
+    /* Oculta cualquier desbordamiento */
+    box-sizing: border-box;
+    /* Incluye padding y bordes en el ancho total */
+    font-size: 13px;
+    height: 220px;
 
+}
+.card-item:hover {
+    transform: scale(1.01) translateY(-20px)
 }
 
 .card-cta {
     text-decoration: none;
+    font-size: 12px;
+    height: auto;
     width: 130px;
     border: 2px solid #191818;
     border-radius: 2px;
     background-color: #191818;
     color: white;
-    padding: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -328,29 +283,33 @@ box-sizing: border-box; /* Incluye padding y bordes en el ancho total */
     margin-right: 30px;
 }
 
-.card-cta:hover{
-transform: scale(1.09)
+.card-cta:hover {
+    transform: scale(1.09)
 }
 
 @media (max-width: 1025px) {
 
     .title {
-        font-size: 8vw; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+        /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+        font-size: 8vw;
     }
 
     .sub-menu-right {
         display: none;
         position: absolute;
         right: 20px;
-        top: 60px; /* Ajusta para que el menú esté más abajo del ícono */
+        /* Ajusta para que el menú esté más abajo del ícono */
+        top: 60px;
         flex-direction: column;
-        background-color: #ff0000; /* Color de fondo del menú desplegable */
-        width: 200px; /* Ajusta según sea necesario */
-        box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+        background-color: #ff0000;
+        /* Color de fondo del menú desplegable */
+        width: 200px;
+        /* Ajusta según sea necesario */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 
     }
 
-    .menu-open .sub-menu-right{
+    .menu-open .sub-menu-right {
         z-index: 2;
         display: flex;
         width: auto;
@@ -364,7 +323,7 @@ transform: scale(1.09)
         border-radius: 2px;
     }
 
-   
+
     .hamburger-icon {
         display: flex;
         position: absolute;
@@ -374,13 +333,14 @@ transform: scale(1.09)
 
     .card-list {
         display: flex;
-        flex-direction: column; /* Asegura que las tarjetas se apilen verticalmente */
-        align-items: center; /* Centra las tarjetas */
+        flex-direction: column;
+        align-items: center;
     }
 
     .card-item {
-        width: 90%; /* Asegura que cada tarjeta ocupe el 90% del ancho del contenedor */
-        margin: 10px 0; /* Añade un margen vertical entre las tarjetas */
+        width: 90%;
+        /* Añade un margen vertical entre las tarjetas */
+        margin: 10px 0;
         max-width: 300px;
     }
 }
