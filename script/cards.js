@@ -6,7 +6,7 @@ const dataCards =[
         "title":"Crossfit y Funcionales",
         "url_image":"./images/card_1.png",
         "desc":"Descripción: Nuestro entrenamiento combina ejercicios de alta intensidad con movimientos funcionales. Te desafiarás físicamente mientras mejoras tu fuerza, resistencia y agilidad. Prepárate para superar tus límites y alcanzar tus objetivos de acondicionamiento.<br>\
-        Beneficios: Mejora la fuerza, la coordinación y la resistencia cardiovascular.",
+        <strong>Beneficios:</strong> Mejora la fuerza, la coordinación y la resistencia cardiovascular.",
         "cta":"Mostrar más...",
         "link":"./card_ingenieria-industrial.php"
     },
