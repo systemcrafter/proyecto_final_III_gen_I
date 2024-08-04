@@ -2,14 +2,14 @@ console.log("accordion loaded");
 
 const dataAccordion = [
     {
-        "title":"Contacto sede Alajuela",
+        "title":"Info Sede Alajuela",
         "desc" : "<strong> Dirección: </strong> Plaza Real Alajuela, tercera etapa local N41.<br>\
         <strong> Teléfono: </strong> 1234-5678 <br>\
         <strong> Horario: </strong> Lunes a Viernes de 5:00am a 9:00pm, Sábados y Domingos de 7:00am a 7:00pm<br>"
     },
 
     {
-        "title":"Contacto sede Escazú",
+        "title":"Info Sede Escazú",
         "desc" : "<strong> Dirección: </strong> Avenida Escazú, primer piso del edificio AE201, Local 02 <br>\
         <strong> Teléfono: </strong> 9876-5432 <br>\
         <strong> Horario: </strong> Lunes a Viernes de 5:00am a 9:00pm, Sábados y Domingos de 7:00am a 7:00pm<br>"
